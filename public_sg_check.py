@@ -1,3 +1,8 @@
+# Detects AWS security groups that allow public access (0.0.0.0/0)
+# Useful for identifying overly permissive network rules that expose
+# cloud resources to the public internet.
+
+import boto3
 import boto3
 
 ec2 = boto3.client('ec2')
